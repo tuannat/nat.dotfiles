@@ -287,13 +287,3 @@ alias reload="exec $SHELL -l"
 alias nginx.start='sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 alias nginx.stop='sudo launchctl unload /Library/LaunchDaemons/homebrew.mxcl.nginx.plist'
 
-# webshop command
-alias generate_all='php ~/shop.dev/tools/generate_all.php'
-alias meta_generate='php ~/shop.dev/bob/cli/index.php --env=dev --module=maintenance --controller=metadata-generator --action=transfer'
-alias migrate='php -d memory_limit=4G ~/shop.dev/bob/cli/index.php --env=dev --module=maintenance --controller=schema-updater --action=dbtable'
-alias start_consumers='php -d memory_limit=2G ~/shop.dev/local/queue/starter.php --env=dev --role=all --verbose'
-alias stop_consumers="ps aux | grep local/queue/starter.php | grep tuannguyen | grep -v grep | awk '{print $2}' | xargs kill -9"
-alias full_import="php ~/shop.dev/tools/init-full-import.php --env=dev --all"
-alias gengo="php ~/shop.dev/alice/dev/importLanguage.php"
-alias minify_static="php ~/shop.dev/alice/dev/deploy.php"
-alias dbtables="php ~/shop.dev/bob/cli/index.php --env=dev --module=maintenance --controller=schema-updater --action=dbtable"
