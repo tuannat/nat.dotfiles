@@ -1,1 +1,1 @@
-export PATH=$PATH:/usr/local/sbin:/usr/local/opt/go/libexec/bin
+export PATH=$PATH

@@ -26,5 +26,5 @@ export MANPAGER='less -X';
 export GREP_OPTIONS='--color=auto';
 
 # GOPATH
-export GOPATH=/Users/ntuan/workspace/gopath
+export GOPATH=~/workspace/gopath
 export PATH=$PATH:$GOPATH/bin
